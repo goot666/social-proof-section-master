@@ -1,0 +1,167 @@
+/*
+Very Dark Magenta: hsl(300, 43%, 22%)
+Soft Pink: hsl(333, 80%, 67%)
+
+### Neutral
+
+Dark Grayish Magenta: hsl(303, 10%, 53%)
+Light Grayish Magenta: hsl(300, 24%, 96%)
+White: hsl(0, 0%, 100%)
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    background-color: hsl(0, 0%, 100%);
+}
+h1 {
+    font-family: 'League Spartan', sans-serif;
+    font-size: 3.7rem;
+    font-weight:700;
+    color:hsl(300, 43%, 22%);
+}
+p {
+    font-family: 'League Spartan', sans-serif;
+    font-size:1rem;
+    font-weight: 400;
+    color:hsl(303, 10%, 53%);
+}
+.description_p {
+    font-size:1.2rem;
+    font-weight: 400;
+    color:hsl(303, 10%, 53%);
+    width:27vw;
+}
+.review {
+    font-family: 'League Spartan', sans-serif;
+    font-size:1rem;
+    font-weight: 800;
+    color:hsl(300, 43%, 22%);
+}
+.name {
+    font-family: 'League Spartan', sans-serif;
+    font-size:1rem;
+    font-weight: 700;
+    color:hsl(0, 0%, 100%);
+}
+.verified_buyer {
+    font-family: 'League Spartan', sans-serif;
+    font-size:1rem;
+    font-weight: 400;
+    color:hsl(333, 80%, 67%);
+}
+.p_bold {
+    font-family: 'League Spartan', sans-serif;
+    font-size:1rem;
+    font-weight: 400;
+    color:hsl(0, 0%, 100%);
+}
+img {
+    position: relative;
+    border-radius:50%;
+    max-width: 12%;
+    top:6%;
+}
+article {
+    display:flex;
+    flex-flow: column nowrap;
+    width:100vw;
+    height:100vh;
+}
+.description {
+    position: relative;
+    top:15%;
+    left:15%;
+    width:30vw;
+    height:10vw;
+}
+.ratings {
+    display: flex;
+    position: relative;
+    top:7%;
+    flex-direction: row wrap;
+    width:25vw;
+    height:15vh;
+}
+.ratings p {
+    margin-left: 2rem;
+}
+.ratings.a {
+    position: relative;
+    top:;
+    left:52%;
+    margin-bottom: 2rem;
+}
+.ratings.b {
+    position: relative;
+    top:;
+    left:54%;
+    margin-bottom: 2rem;
+}
+.ratings.c {
+    position: relative;
+    top:;
+    left:56%;
+}
+svg {
+    position: relative;
+    margin-left: 0.5rem;
+    top:25%
+}
+.social_proof {
+    position:relative;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 0.5rem;
+    padding:1.5rem;
+    width:20vw;
+    height:30vh;
+    display: flex;
+    flex-flow: column wrap;
+    margin-top:-1rem;
+    word-spacing: 1px;
+    line-height: 20px;
+}
+.social_proof p:nth-child(3) {
+    margin-top:-0.5rem;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+}
+.social_proof.b p:nth-child(3) {
+    margin-left:1.2rem;
+}
+.social_proof.a {
+    position: relative;
+    left:15%;
+    top:20%
+}
+.social_proof.b {
+    position: relative;
+    left:37%;
+    top:-2%;
+}
+.social_proof.c {
+    position: relative;
+    left:59%;
+    top:-24%
+}
+.buyer_name {
+    position: relative;
+    left:20%; 
+    top:-20%;   
+    margin-left:-0.5rem;
+    line-height: 3px;
+}
+@media all and (max-width:375px) {
+    body {
+        display:grid;
+        grid-template-columns: max-content;
+}
